@@ -78,7 +78,16 @@ The rate limit of BSC endpoint on Testnet and Mainnet is 10K/5min.
 
 ### 3rd Party Provider
 
-🚀 QuikNode also supports BSC. Devs can get their own custom endpoint for DApps or other needs: <https://quiknode.io>
+* [Moralis](https://moralis.io/): <https://moralis.io/speedy-nodes/>
+
+* ANKR: <https://app.ankr.com/api>
+
+* [Chainstack](https://chainstack.com/): <https://chainstack.com/build-better-with-binance-smart-chain/>
+
+* [GetBlock.io](https://getblock.io/): <https://getblock.io/nodes/bsc>
+
+* QuikNode : <https://quiknode.io>
+
 
 ## Start
 

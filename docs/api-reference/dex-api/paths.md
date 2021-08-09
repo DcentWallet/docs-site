@@ -655,14 +655,17 @@ If the time window is larger than limits, only the first n klines will return. I
 
 ### /api/v1/transactions
 ---
+
+**Note:** This endpoint will be retired soon, use [this api](https://docs.binance.org/api-reference/dex-api/block-service.html#apiv1txs) instead (please read the migration guide).
+
 ##### ***GET***
 **Summary:** Get transactions.
 
 **Description:** Gets a list of transactions. Multisend transaction is not available in this API. Currently 'confirmBlocks' and 'txAge' are not supported.
 
-**Query Window:** Default query window is latest 24 hours; The maximum start - end query window is 3 months.
+**Query Window:** Default query window is latest 24 hours;The maximum start - end query window is 3 months.
 
-**Rate Limit:** 60 requests per IP per minute.
+**Rate Limit:** 15 requests per IP per minute.
 
 
 **Parameters**
@@ -677,7 +680,7 @@ If the time window is larger than limits, only the first n klines will return. I
 | side | query | transaction side. Allowed value: [ RECEIVE, SEND] | No | enum string |
 | startTime | query | start time in Milliseconds | No | long |
 | txAsset | query | txAsset | No | string |
-| txType | query | transaction type. Allowed value: [ NEW_ORDER,ISSUE_TOKEN,BURN_TOKEN,LIST_TOKEN,CANCEL_ORDER,FREEZE_TOKEN,UN_FREEZE_TOKEN,TRANSFER,PROPOSAL,VOTE,MINT,DEPOSIT,CREATE_VALIDATOR,REMOVE_VALIDATOR,TIME_LOCK,TIME_UNLOCK,TIME_RELOCK,SET_ACCOUNT_FLAG,HTL_TRANSFER,CLAIM_HTL,DEPOSIT_HTL,REFUND_HTL] | No | enum string |
+| txType | query | transaction type. Allowed value: [ TRANSFER,NEW_ORDER,ISSUE_TOKEN,BURN_TOKEN,LIST_TOKEN,CANCEL_ORDER,FREEZE_TOKEN,UN_FREEZE_TOKEN,TRANSFER,PROPOSAL,VOTE,MINT,DEPOSIT,CREATE_VALIDATOR,REMOVE_VALIDATOR,TIME_LOCK,TIME_UNLOCK,TIME_RELOCK,SET_ACCOUNT_FLAG,HTL_TRANSFER,CLAIM_HTL,DEPOSIT_HTL,REFUND_HTL] | No | enum string |
 
 **Responses**
 
@@ -691,14 +694,16 @@ If the time window is larger than limits, only the first n klines will return. I
 
 ### /api/v1/transactions-in-block/{blockHeight}
 ---
+**Note:** This endpoint will be retired soon, use [this api](https://docs.binance.org/api-reference/dex-api/block-service.html#apiv1blocksblockheighttxs) instead (please read the migration guide).
+
 ##### ***GET***
 **Summary:** Get transactions in the specific block.
 
 **Description:** Get transactions in the block. Multi-send and multi-coin transactions are flattened as transactions. This API is deprecated.
 
-**Rate Limit:** 5 requests per IP per second.
+**Rate Limit:** 1 requests per IP per second.
 
-**Rate Limit:** 60 requests per IP per minute.
+**Rate Limit:** 15 requests per IP per minute.
 
 
 **Parameters**
@@ -717,15 +722,18 @@ If the time window is larger than limits, only the first n klines will return. I
 | default | Generic error response | [Error](#error) |
 
 ### /api/v2/transactions-in-block/{blockHeight}
+
+**Note:** This endpoint will be retired soon, use [this api](https://docs.binance.org/api-reference/dex-api/block-service.html#apiv1blocksblockheighttxs) instead (please read the migration guide).
+
 ---
 ##### ***GET***
 **Summary:** transactions in Block
 
 **Description:** Get transactions in the block. Multi-send and multi-coin transactions are included as sub-transactions.
 
-**Rate Limit:** 5 request per IP per second.
+**Rate Limit:** 1 request per IP per second.
 
-**Rate Limit:** 60 requests per IP per minute.
+**Rate Limit:** 15 requests per IP per minute.
 
 
 **Parameters**

@@ -14,7 +14,7 @@ The proposal will decide: slash amount, cross-chain transfer fees
 
 ## How to join testnet as a validator?
 
-1. Chooe your own server/PC
+1. Choose your own server/PC
 2. Install software:
 3. Create a wallet and get some BNB
 4. Run your fullnode and keep it synced
@@ -22,7 +22,7 @@ The proposal will decide: slash amount, cross-chain transfer fees
 
 ## How to join mainnet as a validator?
 
-1. Chooe your own server/PC
+1. Choose your own server/PC
 2. Install software:
 3. Create a wallet and get some BNB
 4. Run your fullnode and keep it synced
@@ -81,5 +81,7 @@ No, you cannot.
 
 After you sent `undelegate` transaction, you have to wait 7 days. This period starts at UTC 00:00 next day
 
+## What is 'self-delegation'? How can I increase my 'self-delegation'?
 
+Self-delegation is delegation from a validator to themselves. This amount can be increases by sending a delegate transaction from your validator's operator address.
 
