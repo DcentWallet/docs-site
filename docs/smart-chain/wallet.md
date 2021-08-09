@@ -18,3 +18,4 @@
 |12|[1inch wallet](https://www.youtube.com/watch?v=BXFvPMxJ4_Q)|<https://1inch.io/wallet/>|No|
 |13|[Infinity wallet](./wallet/infinitywallet.md) (Desktop)| <https://infinitywallet.io/download/> |No|
 |14|[BitKeep](./wallet/bitkeep.md) (App&Chrome)|<https://bitkeep.com>|No|
+|15|[D'CENT Wallet](https://userguide.dcentwallet.com/coin-send-receive/how-to-use-coin-account/how-to-use-binance-smart-chain-account)|<https://dcentwallet.com/>|Yes|
